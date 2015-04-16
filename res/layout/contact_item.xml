@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/contactitem_catalog_unselect"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgray"
+        android:paddingRight="4.0dip" />
+           <RelativeLayout
+		          android:padding="5dip"
+		          android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+		          >
+		          <ImageView
+		              android:id="@+id/head_contact_unselect"
+		              android:layout_alignParentLeft="true" 
+		              android:layout_width="50dip"
+	              	  android:layout_height="50dip"
+	              	  android:src="@drawable/icon"
+	              	  android:scaleType="fitCenter"
+		              />
+		          
+		          <LinearLayout 
+			          android:orientation="vertical" 
+			          android:layout_toRightOf="@id/head_contact_unselect"
+			          android:paddingLeft="8dip"
+			          android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		          >
+			          <TextView
+			              android:id="@+id/name_contact_unselect"
+			              android:layout_width="wrap_content"
+		              	  android:layout_height="fill_parent"
+		              	  android:layout_weight="1"
+		              	  android:text="肖秀"
+		              	  android:padding="2dip"
+		              	  android:textSize="15sp"
+		              	  android:singleLine="true"
+		              	  android:gravity="center"
+		              	  android:textColor="@color/black"
+			              />
+			          <TextView
+			              android:id="@+id/message_contact_unselect"
+			              android:layout_width="wrap_content"
+		              	  android:layout_height="fill_parent"
+		              	  android:padding="2dip"
+		              	  android:text=""
+		              	  android:textSize="14dip"
+		              	  android:layout_weight="1"
+		              	  android:singleLine="true"
+		              	  android:gravity="center"
+		              	  android:textColor="@color/gray"
+			              />
+		          </LinearLayout>
+		          <CheckBox
+		              android:id="@+id/check_group"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:visibility="gone"
+		              android:checked="false"
+		              android:layout_alignParentRight="true"
+		              android:layout_centerVertical="true"
+		              />
+		      </RelativeLayout>
+		      
+</LinearLayout>
+

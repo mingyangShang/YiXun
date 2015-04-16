@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<RelativeLayout
+	    android:id="@+id/real_receiverHint"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#00ff00">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_margin="5dp"
+	        android:textSize="@dimen/hint_textSize"
+	        android:text="@string/recevier"/>
+	    
+	    <ImageView
+	        android:id="@+id/image_addReceiver"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/add"
+	        android:scaleType="centerInside"/>
+	    
+	    
+	    
+	        
+	 </RelativeLayout>>
+	 
+	 <GridView
+	      android:id="@+id/gird_receiver"
+	      android:layout_width="fill_parent"
+	      android:layout_height="150dp"
+	      android:layout_alignLeft="@+id/edit_inform"
+	      android:layout_below="@+id/real_receiverHint"
+	      android:layout_margin="5dp"
+	      android:scrollbars="vertical|horizontal"
+	      android:stretchMode="columnWidth"
+	      android:horizontalSpacing="0dp"
+	      android:columnWidth="120dp"
+	      android:numColumns="auto_fit" >
+	  </GridView>
+	 
+	
+	
+	 
+	 <RelativeLayout 
+	     android:id="@+id/rela_informHint"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/gird_receiver"
+	     android:layout_marginTop="5dp">
+	     
+	     <TextView 
+	         android:id="@+id/text_inform"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_margin="5dp"
+	         android:text="@string/inform_content"
+	         android:textSize="@dimen/hint_textSize"/>
+	     
+	     <ImageView 
+	         android:id="@+id/image_face"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_margin="5dp"
+	         android:src="@drawable/add"
+	         android:scaleType="centerInside"/>
+	 </RelativeLayout>
+	 
+	 <EditText 
+	     android:id="@+id/edit_inform"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_below="@+id/rela_informHint"
+	     android:layout_margin="5dp"
+	     android:inputType="none"
+	     android:hint="在此写新通知"
+	     android:background="#11ffff"
+	     />
+	 
+	  <ImageView
+	     android:id="@+id/img_send"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:src="@drawable/ic_launcher"
+	     android:scaleType="centerInside"
+	     android:contentDescription="发送按钮"
+	     android:layout_below="@+id/edit_inform"/>
+
+	  
+
+	     -->
+</RelativeLayout>

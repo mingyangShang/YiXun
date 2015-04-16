@@ -1,0 +1,73 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+  
+        <!--  -<LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+           
+
+            <TextView
+                android:id="@+id/tv_tab_person"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tab_1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tab_2"
+                android:textColor="@color/lightwhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_tab_crowd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/tab_3"
+                android:textColor="@color/lightwhite"
+                android:textSize="18sp" />
+
+            
+        </LinearLayout>
+
+     
+            <ImageView
+                android:id="@+id/iv_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/a" />
+     -->
+     <include android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/contacts_title_fragment"/>
+        
+    
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@color/cornsilk"
+        android:flipInterval="30"
+                android:layout_weight="1.0"
+        android:persistentDrawingCache="animation" />
+    
+
+</LinearLayout>

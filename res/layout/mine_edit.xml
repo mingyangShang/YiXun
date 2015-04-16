@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mineEdit_front"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/mineEdit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="back" />
+
+        
+
+        <TextView
+            android:id="@+id/mineEdit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人资料"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mineEdit_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mineEdit_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_border"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/mineEdit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mineEdit_photo"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/mineEdit_photo"
+            android:maxLines="1"
+            android:text="小明"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="账号"
+                android:textColor="#FFCC33" />
+
+            <TextView
+            android:id="@+id/mineEdit_number"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="12345678911"
+             android:gravity="center_vertical"
+            android:textColor="#FFCC33" />
+            
+        </LinearLayout>
+
+        
+            
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@drawable/text_border" >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="性别"
+                 />
+
+
+            <RadioGroup 
+                android:id="@+id/mineEdit_sexChose" 
+                android:layout_width="fill_parent" 
+                android:orientation="horizontal"
+                 android:gravity="center"
+                android:layout_height="40dp">
+                <!-- android:contentDescription="性别" -->
+
+                <RadioButton
+                    android:id="@+id/mineEdit_male"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:checked="true"
+                    android:textColor="#000000"
+                    android:text="男" />
+
+     			<RadioButton 
+     			    android:layout_width="100dp" 
+     			    android:layout_height="35dp" 
+     			    android:id="@+id/mineEdit_female" 
+     			    android:textColor="#000000"
+     			    android:text="女"></RadioButton>    
+  			</RadioGroup>
+
+
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_border" >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="签名"
+                 />
+
+            <EditText
+            android:id="@+id/mineEdit_sign"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+             android:gravity="center_vertical"
+             />
+            
+        </LinearLayout>
+          
+         <Button
+            android:id="@+id/mineEdit_save"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="保存"
+            android:textColor="#ffffffff"
+             android:background="@drawable/bg_border"
+             />
+         
+        <!--
+             <TextView 
+            android:layout_marginTop="15dp"
+            android:id="@+id/text3"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      3                XXXXXXXXXXX"/>
+        <TextView 
+            android:id="@+id/text4"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:text="      4                XXXXXXXXXXX"/>
+        
+        <TextView 
+            android:layout_marginTop="15dp"
+            android:id="@+id/text5"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      5                XXXXXXXXXXX"/>
+        <TextView 
+            android:id="@+id/text6"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:text="      6                XXXXXXXXXXX"/>
+        
+        <TextView 
+            android:id="@+id/text7"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      7                XXXXXXXXXXX"/> !-->
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="删除好友"
+        android:textSize="20sp"
+        android:alpha="0.8"
+        android:background="#FF9966" />  !-->
+
+    
+</LinearLayout>

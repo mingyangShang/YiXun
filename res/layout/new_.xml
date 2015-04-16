@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TextView  
+    android:paddingLeft="10dp"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:text="名称"  
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:textSize="18sp" />  
+  
+    <EditText  
+        android:id="@+id/editname"  
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+         />
+    </LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/title_img_unselected"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+        <RadioGroup
+            android:id="@+id/group_contact"
+            android:layout_width="match_parent"
+            
+            android:layout_height="match_parent" >
+            <RelativeLayout 
+                android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/title_contact"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系人"
+            android:checked="true"
+            android:textColor="@color/radio_button"
+            android:gravity="center"
+           android:button="@null"  
+            android:background="@drawable/selector_new" 
+           />
+        <RadioButton
+            android:id="@+id/title_discussion"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/title_contact"
+            android:layout_alignBaseline="@+id/title_contact"
+            android:layout_centerVertical="true"
+            android:text="讨论组"
+           android:button="@null"  
+           android:textColor="@color/radio_button"
+            android:gravity="center"
+            android:background="@drawable/selector_new" 
+            />
+        <RadioButton
+            android:id="@+id/title_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title_contact"
+            android:layout_alignBaseline="@+id/title_contact"
+            android:layout_centerVertical="true"
+            android:text="自建群"
+           android:button="@null"  
+                      android:textColor="@color/radio_button"
+           
+            android:gravity="center"
+            android:background="@drawable/selector_new" />
+          <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/add"/>
+            </RelativeLayout>
+          </RadioGroup>
+  
+    
+  
+
+</LinearLayout>
+    <!--  android:background="@drawable/toolbar_bg_normal">-->    
+  
+   <!--   <TextView 
+        android:id="@+id/text_titleContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/style_titleText"
+        android:text="@string/titleContacts"/>
+        -->
+       <!--   <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+			<RelativeLayout 
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/receive_bg" />
+            </RelativeLayout>
+
+        </LinearLayout>
+ 
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/image_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/receive_bg"
+            android:scaleType="fitCenter"/>
+        </LinearLayout>
+    
+    -->

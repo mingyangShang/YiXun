@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"  >
+    <TextView 
+        android:id="@+id/text_title_regi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center"
+        android:background="@color/title_text_selected"
+        android:gravity="center"
+        style="@style/style_titleText"
+        android:text="@string/register"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:text="手机"
+                android:textSize="18sp" />
+            <EditText 
+                android:id="@+id/number_ed"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:layout_marginRight="10dp"
+                android:hint="@string/numb_hint"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/name"
+                android:textSize="18sp" />
+            <EditText 
+                android:id="@+id/name_ed"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:inputType="text"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:text="@string/sex"
+                android:textSize="18sp" />
+            <RadioGroup 
+                android:id="@+id/sex_rd" 
+                android:layout_width="0dp" 
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <!-- android:contentDescription="性别" -->
+     			<RadioButton 
+     			    android:layout_width="fill_parent" 
+     			    android:layout_height="wrap_content" 
+     			    android:layout_weight="1"
+     			    android:id="@+id/radioMale" 
+     			     android:button="@null"  
+            android:drawableRight="@android:drawable/btn_radio"  
+             android:text="@string/man"
+     			    android:checked="true"></RadioButton>
+     			<RadioButton 
+     			    android:layout_width="fill_parent" 
+     			    android:layout_height="wrap_content" 
+     			    android:id="@+id/radioFemale" 
+     			         			    android:layout_weight="1"
+     			    	     android:button="@null"  
+            android:drawableRight="@android:drawable/btn_radio"  
+            android:layout_marginRight="10dp"
+     			    android:text="@string/woman"></RadioButton>    
+  			</RadioGroup>
+  			</LinearLayout>
+  			<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/password1"
+                android:textSize="18sp" />
+            <EditText 
+                android:id="@+id/password1_ed"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:layout_width="10dp"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/password2"
+                android:textSize="18sp" />
+            <EditText 
+                android:id="@+id/password2_ed"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:layout_width="10dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="@string/password_hint"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_width="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/word"
+                android:textSize="18sp" />
+            <EditText 
+                android:id="@+id/word_ed"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:layout_width="10dp"
+                android:singleLine="true"
+                android:hint="@string/word_hint"
+                android:inputType="text"></EditText>"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+            <Button 
+                android:id="@+id/exit_bu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/exit2"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

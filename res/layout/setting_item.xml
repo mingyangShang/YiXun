@@ -1,0 +1,323 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="声音效果"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/toggle_voice"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+
+            <LinearLayout
+                android:id="@+id/layout_vibrator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_vibrator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="震动效果"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_vibrator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_vibrator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/toggle_vibrator"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+              <LinearLayout
+                android:id="@+id/layout_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="离线时接收消息"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_receive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_receive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/toggle_receive"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+              <LinearLayout
+                android:id="@+id/layout_byOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_byOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="对方无网时用短信发通知"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_byOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_byOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/toggle_byOther"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+              <!--  <LinearLayout
+                android:id="@+id/layout_StartOnBoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_StartOnBoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="开机自启动"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_StartOnBoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_StartOnBoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/toggle_StartOnBoot"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+              <LinearLayout
+                android:id="@+id/layout_StartOnBoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_short_bg_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_StartOnBoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="开机自启动"
+                    android:textColor="#7a6f66"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <ToggleButton
+                        android:id="@+id/toggle_StartOnBoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggle_selector"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+
+                    <ImageButton
+                        android:id="@+id/toggleButton_StartOnBoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignRight="@+id/toggle_StartOnBoot"
+                        android:background="#00000000"
+                        android:src="@drawable/progress_thumb_selector" />
+                </RelativeLayout>
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

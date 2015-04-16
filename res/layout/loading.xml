@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+   >
+
+	<ImageView
+	    android:id="@+id/picture_loading"
+	    android:layout_width="fill_parent"
+	    android:layout_height="180dp"
+	    android:layout_alignParentTop="true"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/loading" />
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="150dp" >
+
+        <ImageView
+            android:id="@+id/head_loading"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/head2" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/linear_id_loading"
+        android:layout_height="43dp"
+        android:layout_below="@+id/head_loading"
+        android:paddingLeft="5dp"
+         android:paddingTop="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+   		 <TextView
+   		     android:id="@+id/idtext_loading"
+   		     android:layout_width="50dp"
+   		     android:layout_height="fill_parent"
+   		     android:gravity="center"
+   		     android:text="手机"
+   		     android:textSize="15sp" />
+   		 
+         <EditText
+        android:id="@+id/id_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_weight="1"
+         />
+        
+    </LinearLayout>
+     <LinearLayout
+         android:id="@+id/linear_keyword_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear_id_loading"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+   		 <TextView
+        android:id="@+id/keytext_loading"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="密码" />
+         <EditText
+        android:id="@+id/keyword_load"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:password="true" 
+        
+        />
+        
+    </LinearLayout>
+
+     
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loading_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="登陆" />
+
+    <Button
+        android:id="@+id/new_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/loading_loading"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bg"
+        android:text="注册"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/forget_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_loading"
+        android:layout_alignBottom="@+id/new_loading"
+        android:layout_alignLeft="@+id/loading_loading"
+        android:background="@color/bg"
+        android:text="忘记密码"
+        android:gravity="center"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+</RelativeLayout>

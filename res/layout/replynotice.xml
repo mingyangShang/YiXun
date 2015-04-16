@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bg2"  
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/head2" />
+
+        
+        
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_head"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/user_head"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape" >
+
+            <TextView
+                android:id="@+id/replycontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容" />
+        </LinearLayout>
+        
+        
+        
+        
+        
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_head"
+            android:layout_alignTop="@+id/user_head"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/user_head"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:gravity="center"
+            android:text="time" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/relative_reply"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape" >
+
+            <EditText
+                android:id="@+id/replyEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="回复："
+                android:lineSpacingExtra="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        
+        <Button
+            android:id="@+id/button_yes"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_marginBottom="10dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="嗯 (∩_∩)"
+            android:textSize="15sp" />
+		<Button
+            android:id="@+id/button_reply"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/button_no"
+            android:layout_alignBottom="@+id/button_no"
+            android:background="@color/blue"
+            android:text="回复"
+            android:textSize="15sp" />
+
+		<Button
+		    android:id="@+id/button_no"
+		    android:layout_width="60dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/button_yes"
+		    android:layout_alignBottom="@+id/button_yes"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/button_yes"
+		    android:background="@color/pink"
+		    android:text="抱歉  (>﹏&lt;)"
+		    android:textSize="15sp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

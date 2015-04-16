@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    android:id="@+id/RelativeLayout01"   
+    android:layout_width="fill_parent"   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content"   
+    android:paddingBottom="4dp"  
+    android:paddingTop="4dp"   
+    android:paddingLeft="10dp"  
+    android:descendantFocusability="afterDescendants"
+    android:paddingRight="10dp">  
+
+<ImageView
+    android:id="@+id/friend_head"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@color/red" />
+<TextView
+    android:id="@+id/ItemTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="5dp"
+    android:layout_toRightOf="@+id/friend_head"
+    android:lines="1"
+    android:text="姓名"
+    android:textSize="15sp" />
+<TextView
+    android:id="@+id/textview_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:text="时间" />
+
+<TextView
+    android:id="@+id/ItemText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/friend_head"
+    android:layout_alignLeft="@+id/ItemTitle"
+    android:lines="1"
+    android:ellipsize="end" 
+    android:text="内容hddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    android:textSize="15sp" />
+  
+</RelativeLayout>

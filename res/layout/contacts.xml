@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/contacts_front"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/contacts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="back" />
+
+        <TextView
+            android:id="@+id/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人资料"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/contacts_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/contacts_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_border"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/contacts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/contacts_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/contacts_photo"
+            android:maxLines="1"
+            android:text="小明"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/contacts_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contacts_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/contacts_photo"
+            android:maxLines="2"
+            android:text="男"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/contacts_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/contacts_message"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/contacts_message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/message" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:layout_height="35dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="账号"
+                android:textColor="#FFCC33" />
+
+            <TextView
+            android:id="@+id/contacts_number"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="12345678911"
+             android:gravity="center_vertical"
+            android:textColor="#FFCC33" />
+            
+        </LinearLayout>
+
+        
+            
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_border" >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="签名"
+                />
+
+            <TextView
+            android:id="@+id/contacts_sign"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="啊啊顺丰控股方尽快顺丰刚开始就恢复高考数据恢复啊对开发商的房管局"
+             android:gravity="center_vertical"
+             />
+            
+        </LinearLayout>
+        <TextView
+            android:id="@+id/contacts_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="聊天" />
+        <!--
+             <TextView 
+            android:layout_marginTop="15dp"
+            android:id="@+id/text3"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      3                XXXXXXXXXXX"/>
+        <TextView 
+            android:id="@+id/text4"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:text="      4                XXXXXXXXXXX"/>
+        
+        <TextView 
+            android:layout_marginTop="15dp"
+            android:id="@+id/text5"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      5                XXXXXXXXXXX"/>
+        <TextView 
+            android:id="@+id/text6"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:text="      6                XXXXXXXXXXX"/>
+        
+        <TextView 
+            android:id="@+id/text7"
+            android:layout_height="35dp"
+            android:background="@drawable/text_border"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFCC33"
+            android:text="      7                XXXXXXXXXXX"/> !-->
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="删除好友"
+        android:textSize="20sp"
+        android:alpha="0.8"
+        android:background="#FF9966" />  !-->
+
+    
+</LinearLayout>

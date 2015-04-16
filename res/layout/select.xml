@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#ffffff"
+    android:orientation="vertical" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <TextView 
+	        android:id="@+id/select_"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="选择成员"
+	        style="@style/style_titleText"
+	        android:layout_centerInParent="true"/>
+	   <!--   <TextView 
+	        android:id="@+id/select_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:text="取消"/>-->
+	       
+	    
+	    
+	    
+	</RelativeLayout>
+	 <ListView
+	            android:id="@+id/select_list"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:drawSelectorOnTop="false"/>
+	 <LinearLayout 
+	     android:background="@color/toolbar_bg"
+	     android:layout_width="match_parent"
+	     android:layout_height="@dimen/foot_height">
+	         <TextView 
+	        android:id="@+id/select_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:textColor="@color/title_text_selected"
+	        android:text="取消"/>
+	           <TextView 
+	        android:id="@+id/select_ok"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textColor="@color/title_text_selected"
+	        android:text="确定"/>
+	         
+	 </LinearLayout>
+    
+</LinearLayout>

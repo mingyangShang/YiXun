@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/toolbar_bg"
+    >
+   
+    <LinearLayout 
+        android:id="@+id/layout_chat"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tool_height"
+        android:orientation="vertical"
+        android:layout_weight="1">
+           <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bar_height">
+                
+                <ImageView
+                    android:id="@+id/image_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/message_selected" />
+                  </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                                        android:layout_weight="1"
+             
+                    android:text="@string/titleChat"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/tab_textSize" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tool_height"
+        android:id="@+id/notice_layout"
+        android:orientation="vertical"
+        
+        android:layout_weight="1">
+         <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bar_height"
+                >
+
+                <ImageView
+                    android:id="@+id/image_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/notice_unselected" />
+ </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="@string/titleNotice"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/tab_textSize" />
+           
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tool_height"
+        android:id="@+id/layout_new"
+        android:orientation="vertical"
+        
+        android:layout_weight="1">
+         <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bar_height"
+                >
+
+                <ImageView
+                    android:id="@+id/add_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/new_inform" />
+            </FrameLayout>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="@string/titleNew"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/tab_textSize" />
+   </LinearLayout>
+   
+   <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tool_height"
+        android:id="@+id/layout_contacts"
+                        android:orientation="vertical"
+        android:layout_weight="1">
+         <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bar_height"
+            >
+
+                <ImageView
+                    android:id="@+id/image_constacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contact_unselected" />
+                            </FrameLayout>
+                
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="@string/titleContacts"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/tab_textSize" />
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tool_height"
+                        android:id="@+id/layout_setting"
+        android:orientation="vertical"
+        android:layout_weight="1">
+           <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bar_height">
+                                <ImageView
+                    android:id="@+id/image_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/setting_unselected" />
+                            </FrameLayout>
+                
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="@string/titleSetting"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/tab_textSize" />
+         </LinearLayout>
+      
+
+</LinearLayout>

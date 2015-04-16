@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易迅</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- 这是用于4个页面标题的字符串 -->
+    <string name="titleChat">聊天</string>
+    <string name="titleContacts">联系人</string>
+    <string name="titleNotice">通知</string>
+    <string name="titleSetting">设置</string>
+    <string name="titleNew">新通知</string>
+    <string name="select">选择收信人</string>
+    
+    <!-- 这是用于新通知界面的字符串 -->
+    <string name="recevier">收件人</string>
+    <string name="inform_content">通知内容</string>
+    
+    <!-- 这是用于设置页面的字符串 -->
+    <string name="my_information">个人信息</string>
+  
+    <string name="exit">退出登录</string>
+    <!-- 这是用于通知界面的字符串 -->
+    <string name="receive">接收</string>
+    <string name="send">发送</string>
+    
+    <!-- 这是用于联系人界面的三个选项卡的字符串 -->
+    <string name="tab_1">联系人</string>
+    <string name="tab_2">讨论组</string>
+    <string name="tab_3">自定群</string>
+	
+    <!-- 这是下拉刷新或者上啦刷新的时候用到的字符串 -->
+    <string name="pull_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+    
+     <string name="notice">新通知</string>
+    <string name="user_name">小明</string>
+    <string name="back">返回</string>
+    <string name="time">3月12日  8：00</string>
+    
+    <string name="number">手机号</string>
+    <string name="name">姓  名</string>
+    <string name="sex">性  别</string>
+    <string name="password1">密 码1</string>
+    <string name="password2">密 码2</string>
+    <string name="word">签  名</string>
+    <string name="password_hint">请再次输入密码</string>
+    <string name="exit2">注		册</string>
+    <string name="numb_hint">作为账号使用</string>
+    <string name="word_hint">可以不填</string>
+    
+    <string name="right">确定</string>
+    <string name="head">头像</string>
+    <string name="register">注册</string>
+    
+    <string name="man">男</string>
+    <string name="woman">女</string>
+</resources>

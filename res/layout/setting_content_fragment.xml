@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+            android:background="@android:color/white"
+    
+    android:orientation="vertical" >
+	<include android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/setting_title_fragment" />
+    <include layout="@layout/myinfor" android:id="@+id/layout_change_infor"/>
+
+    <include layout="@layout/setting_item" />
+
+    <TextView
+        android:id="@+id/exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/bg_border"
+        android:gravity="center"
+        android:text="@string/exit" />
+    
+   <!--   <RadioButton
+            android:layout_height="wrap_content"  
+            android:text="最新信息"   
+            android:textSize="17.0sp"     
+            android:textColor="@android:color/black"    
+            android:gravity="center"   
+            android:layout_weight="1"  
+            android:checked="false"  
+            android:button="@null"  
+            android:background="@drawable/selector_new" />
+            -->
+
+</LinearLayout>

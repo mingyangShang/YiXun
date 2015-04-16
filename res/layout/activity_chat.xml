@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/room_bg_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+        <!-- android:src="@drawable/room_bg_top" -->
+
+        <ImageButton
+            android:id="@+id/room_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+        <!-- android:background="@drawable/room_back" -->
+
+        <ImageButton
+            android:id="@+id/room_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+<!--             android:background="@drawable/room_menu" -->
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/bg" >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        
+        <ListView
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:stackFromBottom="true"   
+            android:transcriptMode="alwaysScroll"   
+            android:fadingEdge="none"
+            android:listSelector="#00000000" >
+        </ListView>
+		
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/room_bg_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+        <!-- android:background="@drawable/room_bg_chat" -->
+
+    <!--      <ImageButton
+            android:id="@+id/room_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />-->
+        <!-- android:background="@drawable/room_plus" -->
+
+       <!--   <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/room_plus" />-->
+        <!-- android:src="@drawable/room_line" -->
+
+       <!--  <ImageButton
+            android:id="@+id/room_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/line"
+            android:background="@drawable/room_upload" />
+         -->
+
+        <ImageButton
+            android:id="@+id/room_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" 
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/room_send"/>
+        <!--  -->
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/room_send"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+           
+            android:ellipsize="end"
+            android:ems="10"
+            android:singleLine="false"
+            android:longClickable="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+    <com.stay.pull.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.stay.pull"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+/>
+
+    <ImageView
+        android:id="@+id/lv_backtotop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/lv_backtotop" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <array name="contact_pop_list">
+        <item>移动至分组</item>
+        <item>邀请进讨论组</item>
+        <item>开始聊天</item>
+        <item>查看资料</item>
+        <item>从好友列表中删除</item>
+    </array>
+    <array name="discussion_pop_list">
+        <item>进入聊天</item>
+        <item>查看讨论组信息</item>
+        <item>邀请好友进入该讨论组</item>
+        <item>退出该讨论组</item>
+    </array>
+    <array name="group_pop_list">
+        <item>查看成员</item>
+        <item>添加联系人至该分组</item>
+        <item>从该分组中删除成员</item>
+        <item>删除该分组</item>
+    </array>
+</resources>

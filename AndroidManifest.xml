@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yixun"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+	<uses-permission 
+	    android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission 
+	    android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission 
+	    android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission 
+	    android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+ <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" ></uses-permission>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+           android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.yixun.main.loading"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+              android:windowSoftInputMode="adjustPan"
+            android:name="com.yixun.main.MainActivity"></activity>
+        
+        <activity 
+            android:theme="@android:style/Theme.Holo.Light"
+            android:name="com.yixun.main.NewInformActivity"></activity>
+        <activity 
+            android:theme="@style/titlestyle"
+            android:name="com.yixun.main.SendActivity"></activity>
+        <activity 
+              android:theme="@style/titlestyle"
+            android:name="com.yixun.main.ReplyActivity"></activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.yixun.main.ChatActivity"></activity>
+        <activity 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.yixun.main.Contacts"></activity>
+          <activity 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.yixun.main.Group"></activity>
+          <activity
+               android:theme="@android:style/Theme.NoTitleBar" 
+              android:name="com.yixun.main.Login"></activity>
+          <activity 
+               android:theme="@android:style/Theme.NoTitleBar"
+              android:name="com.yixun.main.Add"></activity>
+          <activity 
+              android:theme="@android:style/Theme.NoTitleBar" 
+              android:name="com.yixun.main.MyGroup"></activity>
+           <activity 
+              android:theme="@android:style/Theme.NoTitleBar" 
+              android:name="com.yixun.main.Select"></activity>
+            <activity 
+              android:theme="@android:style/Theme.NoTitleBar" 
+              android:name="com.yixun.main.MineEdit"></activity>
+            <service 
+                android:name="com.yixun.myview.SocketService"></service>
+    </application>
+
+</manifest>

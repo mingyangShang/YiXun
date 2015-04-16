@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:id="@+id/foot_mygroup"
+     android:background="@color/aliceblue"
+        android:layout_height="match_parent" >
+    <RelativeLayout  
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"       
+    >
+    <ImageView
+        android:id="@+id/delete_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/add"
+        android:scaleType="fitCenter"/>
+    <!--  <TextView
+        android:id="@+id/delete_foot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete_foot"
+        android:layout_alignLeft="@+id/delete_foot"
+        android:paddingTop="10dp"
+        android:text="取消"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"       
+    >
+    <ImageView
+        android:id="@+id/add_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/add"
+        android:scaleType="fitCenter"/>
+    </RelativeLayout>
+</LinearLayout>

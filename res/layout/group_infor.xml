@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/title_text_selected" 
+        android:layout_height="@dimen/title_height" >
+
+       
+            
+
+        <TextView
+            android:id="@+id/text_dis_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="讨论组成员"
+            android:textSize="20sp" />
+          <ImageView
+              android:id="@+id/add_contact_to_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/add"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/group_users"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF9966"
+        android:text="退出讨论组"
+        android:textSize="20sp" />
+
+</LinearLayout>
